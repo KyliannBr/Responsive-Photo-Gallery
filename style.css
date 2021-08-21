@@ -1,0 +1,81 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease-in .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Lato';
+    background-color: #000000b0;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+    background-color: #000000b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Lato';   
+    width: 80%;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 0%;
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in .5s;
+}
+
+.container-img {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    margin: 2%;
+    transition: all ease-in .5s;
+    box-shadow: rgb(0, 0, 0) 5px 5px 20px, #000000 -5px -5px 20px;
+}
+
+.container-img img {
+    height: 100%;
+    border-radius: 2px;
+    filter: grayscale(100%);
+    transition: all ease-in .5s;
+    transition: all ease-in .5s;
+}
+
+.container-img:hover {
+    height: 400px;
+    transition: all ease-out .5s;
+    box-shadow: #fff 5px 5px 20px;
+}
+
+.container-img img:hover {
+    filter: grayscale(0%);
+    transition: all ease-out .5s;
+}
